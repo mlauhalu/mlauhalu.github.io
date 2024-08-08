@@ -17,13 +17,22 @@
             background-color: #1a1a1a;
             color: white;
             font-family: 'Roboto', sans-serif;
+            text-align: center;
         }
 
         h1 {
             font-family: 'Montserrat', sans-serif;
-            font-size: 4rem;
+            font-size: 10vw; /* Responsive font size */
             letter-spacing: 0.1em;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            margin: 0 10px;
+            word-wrap: break-word;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 12vw; /* Slightly larger font size for very small screens */
+            }
         }
     </style>
 </head>
