@@ -18,20 +18,22 @@
             color: white;
             font-family: 'Roboto', sans-serif;
             text-align: center;
+            overflow: hidden; /* Prevents any overflow issues */
         }
 
         h1 {
             font-family: 'Montserrat', sans-serif;
-            font-size: 10vw; /* Responsive font size */
-            letter-spacing: 0.1em;
+            font-size: 12vw; /* Responsive font size */
+            letter-spacing: 0.05em;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-            margin: 0 10px;
-            word-wrap: break-word;
+            margin: 0;
+            padding: 0 5vw; /* Add padding to prevent text from touching the edges */
+            box-sizing: border-box; /* Ensures padding is included in the width calculations */
         }
 
         @media (max-width: 600px) {
             h1 {
-                font-size: 12vw; /* Slightly larger font size for very small screens */
+                font-size: 14vw; /* Adjust font size for very small screens */
             }
         }
     </style>
