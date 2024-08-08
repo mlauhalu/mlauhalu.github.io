@@ -23,20 +23,22 @@
 
         h1 {
             font-family: 'Montserrat', sans-serif;
-            font-size: 10vw; /* Responsive font size */
-            letter-spacing: 0.05em;
+            font-size: 4rem; /* Fixed font size for PC */
+            letter-spacing: 0.1em;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
             margin: 0;
             padding: 0;
             white-space: nowrap; /* Prevents text from wrapping */
-            max-width: 100vw; /* Ensures text fits within the viewport */
-            overflow: hidden; /* Hides any overflow */
+            max-width: 90vw; /* Ensures text fits within the viewport */
+            overflow: hidden;
             box-sizing: border-box;
         }
 
         @media (max-width: 600px) {
             h1 {
-                font-size: 12vw; /* Adjust font size for small screens */
+                font-size: 8vw; /* Adjust font size for small screens */
+                padding: 0 5vw; /* Add padding to the sides on mobile */
+                max-width: 90vw; /* Keep the text within the viewport */
             }
         }
     </style>
