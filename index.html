@@ -6,11 +6,14 @@
     <title>TechTavern.org</title>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/kMVq1iR2g3Ut5wZ29+nrffQ4EMFJ1H89YJXwG6IjikTgmOjx1KP4dxZNN6tA8/aW8Mcj9Wfw9T/YA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         body {
             margin: 0;
             padding: 0;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -18,7 +21,6 @@
             color: white;
             font-family: 'Roboto', sans-serif;
             text-align: center;
-            overflow: hidden;
         }
 
         h1 {
@@ -30,8 +32,38 @@
             padding: 0;
             white-space: nowrap; /* Prevents text from wrapping */
             max-width: 90vw; /* Ensures text fits within the viewport */
-            overflow: hidden;
             box-sizing: border-box;
+        }
+
+        img {
+            margin-top: 20px;
+            max-width: 20%;
+            height: auto;
+            border-radius: 10px; /* Optional: Rounds the corners of the image */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional: Adds a subtle shadow */
+        }
+
+        .social-links {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0 0 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-links li {
+            display: inline-block;
+        }
+
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #ffae00; /* Change this to the color you want on hover */
         }
 
         @media (max-width: 600px) {
@@ -40,10 +72,30 @@
                 padding: 0 5vw; /* Add padding to the sides on mobile */
                 max-width: 90vw; /* Keep the text within the viewport */
             }
+
+            img {
+                max-width: 90%; /* Adjust image size for small screens */
+            }
+
+            .social-links {
+                gap: 10px;
+            }
+
+            .social-links a {
+                font-size: 1.2rem;
+            }
         }
     </style>
 </head>
 <body>
     <h1>TechTavern.org</h1>
+    <img src="soldering_dude.png" alt="Soldering dude">
+    
+    <!-- Social Media Links -->
+    <ul class="social-links">
+        <li><a href="https://github.com/mlauhalu" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+        <li><a href="https://discord.gg/aS4Z3z588A" target="_blank"><i class="fab fa-discord"></i> Discord</a></li>
+        <!-- Add more social links as needed -->
+    </ul>
 </body>
 </html>
